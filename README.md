@@ -23,7 +23,7 @@
 ![mota11.png](./venv/mota11.png)
 
 
-## calibrate
+## calibration
 2차원 이미지 상의 좌표를 3차원 좌표로 mapping 시켜주는 과정을 calibration 이라고 한다. 이번 프로젝트에서 사용한 calbration 알고리즘은 opencv에서 제공해 주는 기능을 활용 하여
 구성하였다. opencv의 chess board 코너를 추출하는 알고리즘을 사용하여 이미지상에서 현실 세상과 mapping할 좌표를 추출 한후 opencv의 calibration 기능과 추출한 real world 좌표를 사용해 카메라 내부 factor와 촬영 방향 정보를 추출 하고 추출한 값들을 카메라 렌즈 왜곡율을 고려하여 보정한후 좌표 변환 공식을 활용하여 2d 좌표를 3d 좌표로 mapping 하였다
 ![c1.png](./venv/c1.png)
